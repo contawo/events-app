@@ -3,6 +3,7 @@
 import styles from './page.module.css';
 import Lottie from "lottie-react";
 import bounce from "@/lottie/bounce_pin.json";
+import lightBg from "@/lottie/light_bg.json";
 import {AiOutlineGoogle, AiOutlineArrowRight} from "react-icons/ai";
 import {FaFacebookF} from "react-icons/fa";
 import {useState} from "react";
@@ -27,11 +28,11 @@ export default function Home() {
           </section>
           <section className={styles.mainContainer}>
             <section className={styles.mainContainerIntro}>
-              {/* <div className={styles.mainContainerIntroBounce}>
+              <div className={styles.mainContainerIntroBounce}>
                 <div className={styles.mainContainerIntroBounceContainer}>
-                  <Lottie animationData={bounce} /> 
+                  <Lottie animationData={lightBg} /> 
                 </div>
-              </div> */}
+              </div>
               <div className={styles.mainContainerIntroContent}>
                 <div className={styles.mainContainerIntroContentWords}>
                   <h1 className={styles.mainContainerIntroContentWordsTitle} 
@@ -57,7 +58,7 @@ export default function Home() {
               <div className={styles.mainContainerFormArea}>
                 <div className={styles.mainContainerFormAreaHeader}>
                   <h1 className={styles.mainContainerFormAreaHeaderText}>Create</h1>
-                  <h1 className={styles.mainContainerFormAreaHeaderText}>Account.</h1>
+                  <h1 className={styles.mainContainerFormAreaHeaderText}>account.</h1>
                 </div>
                 <div className={styles.mainContainerFormAreaAuto}>
                   <div className={styles.mainContainerFormAreaAutoContainer}>

@@ -10,6 +10,7 @@
     justify-content: space-between;
     padding: .7rem;
     border-bottom: 1px solid var(--grey-color);
+    background-color: var(--light-bg-color);
 }
 
 .mainHeaderTitle {
@@ -23,14 +24,19 @@
     align-items: center;
     gap: .5rem;
     cursor: pointer;
+    padding: .5rem;
+    background-color: var(--primary-color);
+    border-radius: calc(var(--border-radius) - 5px);
 }
 
 .mainHeaderBusinessText {
-    font-size: 1rem;
+    font-size: .7rem;
+    color: white;
 }
 
 .mainHeaderBusinessIcon {
-    font-size: 1.2rem;
+    font-size: .9rem;
+    color: white;
 }
 
 .mainContainer {
@@ -61,8 +67,8 @@
 }
 
 .mainContainerIntroBounceContainer {
-    height: 50%;
-    width: 50%;
+    height: 90%;
+    width: 90%;
 }
 
 .mainContainerIntroContent {
@@ -78,7 +84,7 @@
 }
 
 .mainContainerIntroContentWordsTitle {
-    font-size: 3rem;
+    font-size: 3.5rem;
 }
 
 .mainContainerIntroContentText {
@@ -92,6 +98,8 @@
     justify-content: center;
 }
 
+/** ------------- Form Area --------------- */
+
 .mainContainerFormArea {
     width: 60%;
     height: 85%;
@@ -103,11 +111,14 @@
     flex-direction: column;
     justify-content: flex-end;
     gap: 1.2rem;
+    /* background-color: var(--light-bg-color); */
 }
 
 .mainContainerFormAreaHeader {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    align-items: center;
+    gap: .5rem;
 }
 
 .mainContainerFormAreaHeaderText {
@@ -222,4 +233,38 @@
     color: var(--orange-color);
     cursor: pointer;
     text-decoration: none;
+}
+
+@media screen and (max-width: 480px) {
+    .mainContainerIntro {
+        display: none;
+    }
+    .mainContainerFormArea {
+        width: 100%;
+        height: 100%;
+        border: none;
+    }
+    .mainContainer {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .mainContainerFormAreaAutoContainer {
+        padding: 1.3rem .7rem;
+    }
+    .mainContainerFormAreaAutoContainerGoogle,
+    .mainContainerFormAreaAutoContainerFacebook {
+        font-size: 1.5rem;
+    }
+    .mainContainerFormAreaInputsButton {
+        padding: 1.3rem .7rem;
+    }
+    .mainContainerFormAreaAutoContainerText {
+        font-size: 1rem;
+    }
+    .mainHeader {
+        padding-top: 1.5rem;
+    }
+    .mainContainerFormAreaInputsContentValue {
+        font-size: 1.2rem;
+        padding: .8rem .4rem;
+    }
 }
