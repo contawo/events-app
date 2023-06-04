@@ -10,7 +10,7 @@
     justify-content: space-between;
     padding: .7rem;
     border-bottom: 1px solid var(--grey-color);
-    background-color: var(--light-bg-color);
+    /* background-color: var(--light-bg-color); */
 }
 
 .mainHeaderTitle {
@@ -256,6 +256,7 @@
     }
     .mainContainerFormAreaInputsButton {
         padding: 1.3rem .7rem;
+        margin-top: 4rem;
     }
     .mainContainerFormAreaAutoContainerText {
         font-size: 1rem;
@@ -266,5 +267,12 @@
     .mainContainerFormAreaInputsContentValue {
         font-size: 1.2rem;
         padding: .8rem .4rem;
+    }
+    .mainContainerFormAreaHeader {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .mainContainerFormAreaHeaderText {
+        font-size: 3rem;
     }
 }

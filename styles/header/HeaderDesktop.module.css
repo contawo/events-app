@@ -1,0 +1,65 @@
+.headerDesktop {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.1rem 1rem;
+    border-bottom: 1px solid var(--grey-color);
+    height: 8%;
+}
+
+.headerDesktopGreet {
+    display: flex;
+    align-items: center;
+    gap: .4rem;
+}
+
+.headerDesktopGreetTitle {
+    font-size: 1rem;
+}
+
+.headerDesktopGreetText {
+    font-size: 1rem;
+}
+
+.headerDesktopDetails {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.headerDesktopDetailsIcons {
+    background-color: var(--grey-bg);
+    border-radius: calc(var(--border-radius) - 6px);
+    border: 1px solid var(--grey-color);
+    padding: .4rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.headerDesktopDetailsIcon {
+    font-size: 1rem;
+}
+
+.headerDesktopDetailsText {
+    font-size: .9rem;
+}
+
+.headerDesktopDetailsIconsPlay {
+    background-color: var(--grey-bg);
+    border-radius: calc(var(--border-radius) - 6px);
+    border: 1px solid var(--orange-color);
+    padding: .4rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.headerDesktopDetailsIconsPlay > * {
+    color: var(--orange-color);
+}

@@ -1,0 +1,153 @@
+
+.desktop {
+    height: 100%;
+    border-right: 1px solid var(--grey-color);
+}
+
+.desktopHeader {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.2rem .5rem;
+    border-bottom: 1px solid var(--grey-color);
+    height: 8%;
+}
+
+.desktopHeaderTitle {
+    font-size: .9rem;
+    font-weight: 900;
+}
+
+.desktopHeaderIcon {
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.desktopMain {
+    padding: .5rem .5rem;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.desktopMainLinks {
+    display: flex;
+    flex-direction: column;
+    gap: .8rem;
+    margin-top: 0rem;
+}
+
+.desktopMainLinksLink {
+    /* background-color: var(--grey-bg); */
+    display: flex;
+    align-items: center;
+    gap: .6rem;
+    border-radius: calc(var(--border-radius) - 5px);
+    padding: .8rem .6rem;
+    cursor: pointer;
+    border: 1px solid var(--grey-color);
+}
+
+.desktopMainLinksActive {
+    background-color: var(--grey-bg);
+    display: flex;
+    align-items: center;
+    gap: .6rem;
+    border-radius: calc(var(--border-radius) - 5px);
+    padding: .8rem .6rem;
+    cursor: pointer;
+    border: 1px solid var(--orange-color);
+}
+
+.desktopMainLinksLinkIcon {
+    font-size: 1rem;
+}
+
+.desktopMainLinksLinkText {
+    font-size: .8rem;
+    font-weight: 700;
+}
+
+.desktopMainLinksActive .desktopMainLinksLinkIcon {
+    color: var(--orange-color);
+}
+
+.desktopMainLinksActive .desktopMainLinksLinkText {
+    color: var(--orange-color);
+}
+
+.desktopMainBottom {
+    display: flex;
+    width: 14rem;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.desktopMainBottomTrending {
+    border-radius: calc(var(--border-radius) - 5px);
+    background-color: var(--primary-color);
+    padding: .5rem;
+    margin-bottom: .8rem;
+}
+
+.desktopMainBottomTrendingTitle {
+    font-size: 1rem;
+    margin-bottom: .2rem;
+}
+
+.desktopMainBottomTrendingText {
+    font-size: .7rem;
+    margin-bottom: .4rem;
+}
+
+.desktopMainBottomTrendingButton {
+    width: 100%;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    outline: none;
+    border: none;
+    padding: .5rem .2rem;
+    border-radius: calc(var(--border-radius) - 5px);
+    font-size: .7rem;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: 700;
+    transition: .3s all ease-in-out;
+}
+
+.desktopMainBottomTrendingButton:hover {
+    background-color: var(--grey-bg);
+}
+
+.desktopMainBottomProfile {
+    display: flex;
+    gap: .3rem;
+    cursor: pointer;
+    width: 100%;
+}
+
+.desktopMainBottomProfileIcon {
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    background-color: var(--grey-bg);
+    border: 1px solid var(--grey-color);
+}
+
+.desktopMainBottomProfileUser {
+    display: flex;
+    flex-direction: column;
+}
+
+.desktopMainBottomProfileUserTitle {
+    font-size: .9rem;
+    color: var(--text-color);
+}
+
+.desktopMainBottomProfileUserText {
+    font-size: .7rem;
+    color: var(--orange-color);
+    font-weight: 700;
+}
