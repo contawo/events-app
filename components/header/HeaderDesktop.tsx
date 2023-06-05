@@ -11,7 +11,7 @@ export default function HeaderDesktop() {
     return (
         <header className={styles.headerDesktop}>
             <section className={styles.headerDesktopGreet}>
-                <h3 className={styles.headerDesktopGreetTitle}>Welcome</h3>
+                <h3 className={styles.headerDesktopGreetTitle}>Welcome,</h3>
                 <p className={styles.headerDesktopGreetText}>Awonke</p>
             </section>
             <section className={styles.headerDesktopDetails}>

@@ -8,3 +8,10 @@
 .eventsMain {
     width: 100%;
 }
+
+.eventsMainContent {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    margin-top: 1rem;
+}

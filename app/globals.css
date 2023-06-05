@@ -1,16 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;600;700;900&display=swap');
 
 :root {
-    --bg-color: #ffffff;
+    --bg-color: #fdfdfd;
     --light-bg-color: #f7f7f7;
     --text-color: #000000;
     --primary-color: #0085D1;
     --lignt-primary-color: #30b0fa;
     --grey-color: #898989;
     --red-color: rgb(216, 0, 0);
-    --orange-color: rgb(232, 151, 0);
+    --orange-color: rgb(217, 141, 0);
     --border-radius: 10px;
     --grey-bg: rgb(235, 235, 235);
+    --linear: linear-gradient(270deg, rgba(217, 141, 0, 0.75) 40.1%, rgba(255, 255, 255, 0) 71.35%);
 
     --main-font: 'Inter', sans-serif;
     --secondary-font: 'Anton', sans-serif;
@@ -23,6 +24,8 @@
         --text-color: #ffffff;
         --grey-color: rgb(103, 103, 103);
         --grey-bg: rgb(26, 26, 26);
+        --orange-color: rgb(232, 151, 0);
+        --linear: linear-gradient(270deg, rgba(217, 141, 0, 0.75) 40.1%, rgba(0, 0, 0, 0) 71.35%);
     }
 }
 

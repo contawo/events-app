@@ -58,7 +58,7 @@
     border-radius: calc(var(--border-radius) - 5px);
     padding: .8rem .6rem;
     cursor: pointer;
-    border: 1px solid var(--orange-color);
+    border: 1px solid var(--grey-color);
 }
 
 .desktopMainLinksLinkIcon {
@@ -71,11 +71,11 @@
 }
 
 .desktopMainLinksActive .desktopMainLinksLinkIcon {
-    color: var(--orange-color);
+    color: var(--primary-color);
 }
 
 .desktopMainLinksActive .desktopMainLinksLinkText {
-    color: var(--orange-color);
+    color: var(--primary-color);
 }
 
 .desktopMainBottom {
@@ -108,7 +108,7 @@
     color: var(--text-color);
     outline: none;
     border: none;
-    padding: .5rem .2rem;
+    padding: .7rem .2rem;
     border-radius: calc(var(--border-radius) - 5px);
     font-size: .7rem;
     cursor: pointer;
