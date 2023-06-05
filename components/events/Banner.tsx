@@ -34,7 +34,7 @@ export default function Banner() {
                             color: (number === 1) ? '#0085D1' : "",
                             transition: ".3s all ease-in-out"
                           }}
-                    >Your</span>
+                    >Upcoming</span>
                     <span 
                         className={styles.bannerContainerTitleTextMain}
                         style={{

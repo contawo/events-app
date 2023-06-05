@@ -6,6 +6,7 @@
     padding: 1.1rem 1rem;
     border-bottom: 1px solid var(--grey-color);
     height: 8%;
+    background-color: var(--light-bg-color);
 }
 
 .headerDesktopGreet {
@@ -16,6 +17,7 @@
 
 .headerDesktopGreetTitle {
     font-size: 1rem;
+    color: var(--orange-color);
 }
 
 .headerDesktopGreetText {
@@ -46,6 +48,9 @@
 
 .headerDesktopDetailsText {
     font-size: .9rem;
+    cursor: pointer;
+    color: var(--red-color);
+    font-weight: 700;
 }
 
 .headerDesktopDetailsIconsPlay {

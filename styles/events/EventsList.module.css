@@ -1,0 +1,41 @@
+.eventsList {
+    width: 100%;
+    margin-top: 3rem;
+}
+
+.eventsListTop {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.eventsListTopTitle {
+    font-size: 1.8rem;
+}
+
+.eventsListTopToggle {
+    display: flex;
+    align-items: center;
+    gap: 1.4rem;
+}
+
+.eventsListTopToggleItem {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+
+    padding: .6rem .8rem;
+    border: 1px solid var(--grey-color);
+    border-radius: calc(var(--border-radius) - 5px);
+    background-color: var(--light-bg-color);
+}
+
+.eventsListTopToggleItemText {
+    font-size: .8rem;
+}
+
+.eventsListTopToggleItemIcon {
+    font-size: .8rem;
+    cursor: pointer;
+}

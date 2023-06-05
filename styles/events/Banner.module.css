@@ -18,6 +18,7 @@
     padding: 0 3.5rem;
     background-image: url("https://images.unsplash.com/photo-1505964135045-cdada2f6bf43?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80");
     background-size: cover;
+    /* border: 1px solid var(--grey-color); */
 }
 
 .bannerContainerOverlap {
@@ -29,6 +30,7 @@
     background: var(--linear);
     z-index: 1;
     border-radius: calc(var(--border-radius) - 5px);
+    color: rgba(0, 0, 0, 0);
 }
 
 .bannerContainerTitle {
@@ -40,7 +42,7 @@
 }
 
 .bannerContainerTitleText {
-    font-size: 1.2rem;
+    font-size: 1rem;
     z-index: 2;
     color: white;
     display: inline;
@@ -79,7 +81,7 @@
 .bannerSearchContainer {
     width: 80%;
     height: 3.5rem;
-    background-color: var(--bg-color);
+    background-color: var(--light-bg-color);
     border-radius: calc(var(--border-radius) - 5px);
     border: 1px solid var(--grey-color);
 
@@ -90,7 +92,7 @@
 }
 
 .bannerSearchContainerField {
-    padding: .5rem 0rem;
+    padding: .4rem 0rem;
     display: flex;
     align-items: center;
     gap: .5rem;
@@ -112,11 +114,11 @@
 .bannerSearchContainerFieldIcon {
     font-size: 1rem;
     cursor: pointer;
-    color: var(--primary-color);
+    /* color: var(--primary-color); */
 }
 
 .bannerSearchContainerCity {
-    padding: .5rem 0rem;
+    padding: .4rem 0rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -137,7 +139,7 @@
 }
 
 .bannerSearchContainerDate {
-    padding: .5rem 0rem;
+    padding: .4rem 0rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -158,10 +160,20 @@
 
 .bannerSearchContainerDateInput::-webkit-calendar-picker-indicator{
     cursor: pointer;
-    background-color: var(--primary-color);
+    /* background-color: var(--primary-color); */
     font-size: 1.1rem;
     border-radius: 5px;
     padding: .4rem;
+}
+
+@media (prefers-color-scheme: dark) {
+    .bannerSearchContainerDateInput::-webkit-calendar-picker-indicator{
+        cursor: pointer;
+        background-color: white;
+        font-size: 1.1rem;
+        border-radius: 5px;
+        padding: .1rem;
+    }
 }
 
 .bannerSearchContainerSubmit {

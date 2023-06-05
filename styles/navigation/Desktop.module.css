@@ -2,6 +2,7 @@
 .desktop {
     height: 100%;
     border-right: 1px solid var(--grey-color);
+    background-color: var(--light-bg-color);
 }
 
 .desktopHeader {
@@ -10,7 +11,7 @@
     align-items: center;
     justify-content: space-between;
     padding: 1.2rem .5rem;
-    border-bottom: 1px solid var(--grey-color);
+    /* border-bottom: 1px solid var(--grey-color); */
     height: 8%;
 }
 
@@ -47,7 +48,7 @@
     border-radius: calc(var(--border-radius) - 5px);
     padding: .8rem .6rem;
     cursor: pointer;
-    border: 1px solid var(--grey-color);
+    /* border: 1px solid var(--grey-color); */
 }
 
 .desktopMainLinksActive {

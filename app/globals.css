@@ -2,7 +2,7 @@
 
 :root {
     --bg-color: #fdfdfd;
-    --light-bg-color: #f7f7f7;
+    --light-bg-color: #f1f1f1;
     --text-color: #000000;
     --primary-color: #0085D1;
     --lignt-primary-color: #30b0fa;
@@ -11,7 +11,7 @@
     --orange-color: rgb(217, 141, 0);
     --border-radius: 10px;
     --grey-bg: rgb(235, 235, 235);
-    --linear: linear-gradient(270deg, rgba(217, 141, 0, 0.75) 40.1%, rgba(255, 255, 255, 0) 71.35%);
+    --linear: linear-gradient(270deg, rgba(217, 141, 0, 0.6) 40.1%, rgba(255, 255, 255, 0) 71.35%);
 
     --main-font: 'Inter', sans-serif;
     --secondary-font: 'Anton', sans-serif;
@@ -19,13 +19,13 @@
 
 @media (prefers-color-scheme: dark) {
     :root {
-        --bg-color: #0e0e0e;
-        --light-bg-color: #1a1a1a;
+        --bg-color: #000000;
+        --light-bg-color: #0f0f0f;
         --text-color: #ffffff;
         --grey-color: rgb(103, 103, 103);
         --grey-bg: rgb(26, 26, 26);
         --orange-color: rgb(232, 151, 0);
-        --linear: linear-gradient(270deg, rgba(217, 141, 0, 0.75) 40.1%, rgba(0, 0, 0, 0) 71.35%);
+        --linear: linear-gradient(270deg, rgba(217, 141, 0, 0.6) 40.1%, rgba(0, 0, 0, 0) 71.35%);
     }
 }
 
