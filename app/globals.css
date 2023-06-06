@@ -2,7 +2,7 @@
 
 :root {
     --bg-color: #fdfdfd;
-    --light-bg-color: #f1f1f1;
+    --light-bg-color: #ebebeb;
     --text-color: #000000;
     --primary-color: #0085D1;
     --lignt-primary-color: #30b0fa;
@@ -14,6 +14,7 @@
     --linear: linear-gradient(270deg, rgba(217, 141, 0, 0.5) 40.1%, rgba(255, 255, 255, 0) 71.35%);
     --transparent-bg: rgba(255, 255, 255, 0.7);
     --filter: blur(35px);
+    --gradient-bg: linear-gradient(180deg, #EBEBEB 0%, rgba(255, 255, 255, 0.05) 100%);
 
     --main-font: 'Inter', sans-serif;
     --secondary-font: 'Anton', sans-serif;
@@ -29,6 +30,7 @@
         --orange-color: rgb(232, 151, 0);
         --linear: linear-gradient(270deg, rgba(217, 141, 0, 0.5) 40.1%, rgba(0, 0, 0, 0) 71.35%);
         --transparent-bg: rgba(0, 0, 0, 0.7);
+        --gradient-bg: linear-gradient(180deg, rgba(15, 15, 15, 1) 0%, rgba(15, 15, 15, 0.05) 100%);
     }
 }
 

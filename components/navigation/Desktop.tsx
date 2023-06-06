@@ -14,6 +14,7 @@ export default function Desktop() {
 
     return (
         <section className={styles.desktop}>
+            <div className={styles.desktopBg}></div>
             <div className={styles.desktopHeader}>
                 <h1 
                     style={{

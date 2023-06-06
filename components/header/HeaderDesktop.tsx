@@ -12,7 +12,7 @@ export default function HeaderDesktop() {
         <header className={styles.headerDesktop}>
             <section className={styles.headerDesktopGreet}>
                 <h3 className={styles.headerDesktopGreetTitle}>Welcome,</h3>
-                <p className={styles.headerDesktopGreetText}>Awonke</p>
+                <p className={styles.headerDesktopGreetText}>awonke</p>
             </section>
             <section className={styles.headerDesktopDetails}>
                 <p className={styles.headerDesktopDetailsText}>Report</p>
