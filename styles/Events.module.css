@@ -25,3 +25,25 @@
 .eventsMain::-webkit-scrollbar{
     display: none;
 }
+
+.eventsMainMobile {
+    display: none;
+}
+
+@media screen and (max-width: 480px) {
+    .eventsMain {
+        display: none;
+    }
+    .events {
+        position: relative;
+    }
+    .eventsMainMobile {
+        width: 100%;
+        height: 100%;
+        display: block;
+    }
+    .eventsMainMobileContent {
+        height: 100%;
+        width: 100%;
+    }
+}
