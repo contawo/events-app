@@ -3,10 +3,13 @@
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
-    height: 12%;
+    height: 10.5%;
     background-color: var(--transparent-bg);
     backdrop-filter: var(--filter);
     padding: 0 .8rem;
+    position: sticky;
+    top: 0;
+    padding-bottom: .8rem;
 }
 
 .headerMobileInfo {
@@ -16,18 +19,36 @@
 }
 
 .headerMobileInfoUser {
-    height: 2.8rem;
-    width: 2.8rem;
+    height: 2rem;
+    width: 2rem;
     background-color: var(--grey-color);
     border-radius: 50%;
     margin-right: .5rem;
+    background-image: url("https://images.unsplash.com/photo-1566753323558-f4e0952af115?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=721&q=80");
+    background-size: cover;
 }
 
 .headerMobileInfoGreet {
-    font-size: 1rem;
+    font-size: 1.4rem;
 }
 
 .headerMobileInfoText {
-    font-size: 1rem;
+    font-size: 1.4rem;
     color: var(--orange-color);
+    font-weight: 700;
+}
+
+.headerMobileDetails {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.headerMobileDetailsIcon {
+    font-size: 1.6rem;
+}
+
+.headerMobileDetailsIconActive {
+    font-size: 1.6rem;
+    color: var(--red-color);
 }

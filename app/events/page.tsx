@@ -7,6 +7,7 @@ import Desktop from "@/components/navigation/Desktop";
 import Mobile from "@/components/navigation/Mobile";
 import HeaderMobile from "@/components/header/HeaderMobile";
 import styles from "@/styles/Events.module.css";
+import BannerMobile from "@/components/events/BannerMobile";
 
 export default function Events() {
     return (
@@ -23,6 +24,7 @@ export default function Events() {
             <section className={styles.eventsMainMobile}>
                 <section className={styles.eventsMainMobileContent}>
                     <HeaderMobile />
+                    <BannerMobile />
                 </section>
                 <Mobile />
             </section>
