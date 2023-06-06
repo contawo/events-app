@@ -2,14 +2,25 @@
 
 import styles from './page.module.css';
 import Lottie from "lottie-react";
-import bounce from "@/lottie/bounce_pin.json";
 import lightBg from "@/lottie/light_bg.json";
 import {AiOutlineGoogle, AiOutlineArrowRight} from "react-icons/ai";
 import {FaFacebookF} from "react-icons/fa";
 import {useState} from "react";
+import { FormError, FormType } from '@/types/all';
+import { useRouter } from 'next/navigation';
 
 export default function Home() {
     const [number, setNumber] = useState<number>(0)
+    const [userDetails, setUserDetails] = useState<FormType>({
+      email: "",
+      password: ""
+    })
+    const [error, setError] = useState<FormError>({
+      emailError: "",
+      passwordError: ""
+    })
+    const router = useRouter();
+
     setTimeout(() => {
       if (number < 2) {
         setNumber(number + 1)
@@ -17,6 +28,29 @@ export default function Home() {
         setNumber(0)
       }
     }, 2000)
+
+    const createAccount = () => {
+      if (userDetails.email.trim() === "") {
+        setError({...error, emailError: "Please enter your email"})
+        return
+      }
+
+      if (userDetails.password.trim() === "") {
+        setError({...error, passwordError: "Please enter your password"})
+        return
+      }
+      
+      const validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+\.+[a-zA-Z0-9-]*$/;
+      if (!userDetails.email.match(validRegex)) {
+        setError({passwordError: "", emailError: "Please enter a valid email"})
+        return
+      } else {
+        setError({passwordError: "", emailError: ""})
+        router.push("/genre")
+      }
+      
+    }
+
     return (
         <main className={styles.main}>
           <section className={styles.mainHeader}>
@@ -72,14 +106,38 @@ export default function Home() {
                 </div>
                 <form className={styles.mainContainerFormAreaInputs}>
                   <div className={styles.mainContainerFormAreaInputsContent}>
-                    <p className={styles.mainContainerFormAreaInputsContentText}>Email</p>
-                    <input className={styles.mainContainerFormAreaInputsContentValue} type="email" placeholder='Enter your email...' />
+                    {
+                      (error.emailError.trim() === "") ?
+                      <p className={styles.mainContainerFormAreaInputsContentText}>Email</p> : 
+                      <p className={styles.mainContainerFormAreaInputsContentError}>{error.emailError}</p>
+                    }
+                    <input 
+                      className={styles.mainContainerFormAreaInputsContentValue} 
+                      type="email" 
+                      placeholder='Enter your email...' 
+                      onChange={(e) => setUserDetails({...userDetails, email: e.target.value})}
+                      value={userDetails.email}
+                    />
                   </div>
                   <div className={styles.mainContainerFormAreaInputsContent}>
-                    <p className={styles.mainContainerFormAreaInputsContentText}>Password</p>
-                    <input className={styles.mainContainerFormAreaInputsContentValue} type="password" placeholder='Enter your password...' />
+                    {
+                      (error.passwordError.trim() === "") ?
+                      <p className={styles.mainContainerFormAreaInputsContentText}>Pawword</p> : 
+                      <p className={styles.mainContainerFormAreaInputsContentError}>{error.passwordError}</p>
+                    }
+                    <input 
+                      className={styles.mainContainerFormAreaInputsContentValue} 
+                      type="password" 
+                      placeholder='Enter your password...' 
+                      onChange={(e) => setUserDetails({...userDetails, password: e.target.value})}
+                      value={userDetails.password}
+                    />
                   </div>
-                  <button className={styles.mainContainerFormAreaInputsButton}>Create account</button>
+                  <button 
+                    className={styles.mainContainerFormAreaInputsButton} 
+                    type="button"
+                    onClick={createAccount}
+                  >Create account</button>
                   <div className={styles.mainContainerFormAreaInputsLogin}>
                     <p className={styles.mainContainerFormAreaInputsLoginText}>Already have account?</p>
                     <p className={styles.mainContainerFormAreaInputsLoginLink}>Login</p>

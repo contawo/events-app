@@ -8,3 +8,13 @@ export type EventType = {
     eventPrice: number,
     eventCurrency?: string
 }
+
+export type FormError = {
+    emailError: string,
+    passwordError: string
+}
+
+export type FormType = {
+    email: string,
+    password: string
+}

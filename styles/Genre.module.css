@@ -15,7 +15,7 @@
 
 .genreHeaderText {
     color: var(--orange-color);
-    font-size: 1.1rem;
+    font-size: .9rem;
     font-weight: 400;
     cursor: pointer;
     text-decoration: none;
@@ -60,7 +60,7 @@
 }
 
 .genreMainContentItemSelected {
-    background-color: var(--primary-color);
+    background-color: var(--red-color);
     padding: .4rem .8rem;
     display: flex;
     align-items: center;
@@ -81,10 +81,35 @@
     color: white;
 }
 
-.genreMainText {
-    margin-top: 2.5rem;
-    font-size: 1rem;
+.genreMainContainer {
+    margin-top: 1.5rem;
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.genreMainContainerButton {
+    width: 100%;
+    padding: .9rem .4rem;
+    background-color: var(--primary-color);
+    outline: none;
+    border: none;
+    border-radius: calc(var(--border-radius) - 5px);
+    color: white;
     font-weight: 700;
+    font-size: 1rem;
+    margin-bottom: .8rem;
+    cursor: pointer;
+}
+
+.genreMainContainerButton:hover {
+    background-color: var(--lignt-primary-color);
+}
+
+.genreMainContainerText {
+    font-size: .7rem;
+    color: var(--orange-color);
 }
 
 @media screen and (max-width: 480px) {
@@ -96,5 +121,8 @@
     }
     .genreMainText {
         margin-top: 4rem;
+    }
+    .genreMainContainer {
+        width: 85%;
     }
 }
