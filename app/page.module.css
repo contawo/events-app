@@ -9,8 +9,8 @@
     align-items: center;
     justify-content: space-between;
     padding: .7rem;
-    border-bottom: 1px solid var(--grey-color);
-    /* background-color: var(--light-bg-color); */
+    background-color: var(--light-bg-color);
+    display: none;
 }
 
 .mainHeaderTitle {
@@ -43,7 +43,7 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     width: 100%;
-    height: 90%;
+    height: 100%;
 }
 
 .mainContainerIntro {
@@ -105,13 +105,12 @@
     height: 85%;
     border-radius: var(--border-radius);
     padding: 1rem;
-    border: 1px solid var(--grey-color);
 
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     gap: 1.2rem;
-    /* background-color: var(--light-bg-color); */
+    background-color: var(--light-bg-color);
 }
 
 .mainContainerFormAreaHeader {
@@ -243,6 +242,7 @@
         width: 100%;
         height: 100%;
         border: none;
+        background-color: var(--bg-color);
     }
     .mainContainer {
         grid-template-columns: repeat(1, 1fr);
