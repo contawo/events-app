@@ -16,15 +16,12 @@ export default function HeaderDesktop() {
             </section>
             <section className={styles.headerDesktopDetails}>
                 <p className={styles.headerDesktopDetailsText}>Report</p>
-                <div 
-                    className={play ? styles.headerDesktopDetailsIconsPlay : styles.headerDesktopDetailsIcons}
+                <HiOutlineMusicalNote 
+                    className={play ? styles.headerDesktopDetailsIconPlay : styles.headerDesktopDetailsIcon} 
                     onClick={() => setPlay(!play)}
-                >
-                    <HiOutlineMusicalNote className={styles.headerDesktopDetailsIcon} />
-                </div>
-                <div className={styles.headerDesktopDetailsIcons}>
-                    <TfiAnnouncement className={styles.headerDesktopDetailsIcon} />
-                </div>
+                />
+                <TfiAnnouncement className={styles.headerDesktopDetailsIcon} />
+                <div className={styles.headerDesktopDetailsUser}></div>
             </section>
         </header>
     )

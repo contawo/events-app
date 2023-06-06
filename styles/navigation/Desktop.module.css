@@ -1,7 +1,6 @@
-
 .desktop {
     height: 100%;
-    border-right: 1px solid var(--grey-color);
+    /* border-right: 1px solid var(--grey-color); */
     background-color: var(--light-bg-color);
 }
 
@@ -41,25 +40,22 @@
 }
 
 .desktopMainLinksLink {
-    /* background-color: var(--grey-bg); */
     display: flex;
     align-items: center;
     gap: .6rem;
     border-radius: calc(var(--border-radius) - 5px);
     padding: .8rem .6rem;
     cursor: pointer;
-    /* border: 1px solid var(--grey-color); */
 }
 
 .desktopMainLinksActive {
-    background-color: var(--grey-bg);
+    background-color: var(--primary-color);
     display: flex;
     align-items: center;
     gap: .6rem;
     border-radius: calc(var(--border-radius) - 5px);
     padding: .8rem .6rem;
     cursor: pointer;
-    border: 1px solid var(--grey-color);
 }
 
 .desktopMainLinksLinkIcon {
@@ -72,11 +68,11 @@
 }
 
 .desktopMainLinksActive .desktopMainLinksLinkIcon {
-    color: var(--primary-color);
+    color: white;
 }
 
 .desktopMainLinksActive .desktopMainLinksLinkText {
-    color: var(--primary-color);
+    color: white;
 }
 
 .desktopMainBottom {
@@ -133,8 +129,7 @@
     height: 2rem;
     width: 2rem;
     border-radius: 50%;
-    background-color: var(--grey-bg);
-    border: 1px solid var(--grey-color);
+    background-color: var(--grey-color);
 }
 
 .desktopMainBottomProfileUser {

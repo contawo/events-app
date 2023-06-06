@@ -11,7 +11,9 @@
     --orange-color: rgb(217, 141, 0);
     --border-radius: 10px;
     --grey-bg: rgb(235, 235, 235);
-    --linear: linear-gradient(270deg, rgba(217, 141, 0, 0.6) 40.1%, rgba(255, 255, 255, 0) 71.35%);
+    --linear: linear-gradient(270deg, rgba(217, 141, 0, 0.5) 40.1%, rgba(255, 255, 255, 0) 71.35%);
+    --transparent-bg: rgba(255, 255, 255, 0.7);
+    --filter: blur(35px);
 
     --main-font: 'Inter', sans-serif;
     --secondary-font: 'Anton', sans-serif;
@@ -25,7 +27,8 @@
         --grey-color: rgb(103, 103, 103);
         --grey-bg: rgb(26, 26, 26);
         --orange-color: rgb(232, 151, 0);
-        --linear: linear-gradient(270deg, rgba(217, 141, 0, 0.6) 40.1%, rgba(0, 0, 0, 0) 71.35%);
+        --linear: linear-gradient(270deg, rgba(217, 141, 0, 0.5) 40.1%, rgba(0, 0, 0, 0) 71.35%);
+        --transparent-bg: rgba(0, 0, 0, 0.7);
     }
 }
 
@@ -57,4 +60,8 @@ body::-webkit-scrollbar-track {
 body::-webkit-scrollbar-thumb {
     background-color: var(--primary-color);
     border-radius: 5px;
+}
+
+body::-webkit-scrollbar{
+    display: none;
 }

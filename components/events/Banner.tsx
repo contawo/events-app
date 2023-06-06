@@ -7,6 +7,7 @@ import {useState} from "react";
 
 export default function Banner() {
     const [number, setNumber] = useState<number>(0)
+
     setTimeout(() => {
       if (number < 2) {
         setNumber(number + 1)
@@ -54,7 +55,10 @@ export default function Banner() {
                         <FaChevronDown className={styles.bannerSearchContainerFieldIcon} />
                     </div>
                     <div className={styles.bannerSearchContainerDate}>
-                        <input id="datePick" className={styles.bannerSearchContainerDateInput} type="date" placeholder="Choose event date..." onFocus={(e) => (e.target.type = "date")} />
+                        <input 
+                            className={styles.bannerSearchContainerDateInput} 
+                            type="date"
+                            placeholder="Choose event date..." />
                     </div>
                     <div className={styles.bannerSearchContainerCity}>
                         <input 
