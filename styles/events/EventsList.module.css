@@ -66,4 +66,7 @@
         display: block;
         font-size: 1.2rem;
     }
+    .eventsListTopTitle {
+        font-size: 1.5rem;
+    }
 }
