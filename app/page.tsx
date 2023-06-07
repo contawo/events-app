@@ -8,6 +8,7 @@ import {FaFacebookF} from "react-icons/fa";
 import {useState} from "react";
 import { FormError, FormType } from '@/types/all';
 import { useRouter } from 'next/navigation';
+import {useEffect} from "react";
 
 export default function Home() {
     const [number, setNumber] = useState<number>(0)
@@ -30,31 +31,34 @@ export default function Home() {
     }, 2000)
 
     const createAccount = () => {
-      if (userDetails.email.trim() === "") {
-        setError({...error, emailError: "Please enter your email"})
-        return
-      } else {
-        setError({...error, emailError: ""})
-      }
+      // if (userDetails.email.trim() === "") {
+      //   setError({...error, emailError: "Please enter your email"})
+      //   return
+      // } else {
+      //   setError({...error, emailError: ""})
+      // }
       
-      const validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+\.+[a-zA-Z0-9-]*$/;
-      if (!userDetails.email.match(validRegex)) {
-        setError({passwordError: "", emailError: "Please enter a valid email"})
-        return
-      } else {
-        setError({...error, emailError: ""})   
-      }
+      // const validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+\.+[a-zA-Z0-9-]*$/;
+      // if (!userDetails.email.match(validRegex)) {
+      //   setError({passwordError: "", emailError: "Please enter a valid email"})
+      //   return
+      // } else {
+      //   setError({...error, emailError: ""})   
+      // }
       
-      if (userDetails.password.trim() === "") {
-        setError({...error, passwordError: "Please enter your password"})
-        return
-      } else {
-        setError({passwordError: "", emailError: ""})
-        router.push("/genre")
-      }
-      
-      
+      // if (userDetails.password.trim() === "") {
+      //   setError({...error, passwordError: "Please enter your password"})
+      //   return
+      // } else {
+      //   setError({passwordError: "", emailError: ""})
+      //   router.push("/genre")
+      // }
+      router.push("/genre")
     }
+
+    // useEffect(() => {
+    //   location.reload()
+    // }, [])
 
     return (
         <main className={styles.main}>

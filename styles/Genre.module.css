@@ -1,6 +1,6 @@
 .genre {
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
 }
 
 .genreHeader {
@@ -14,7 +14,7 @@
 }
 
 .genreHeaderText {
-    color: var(--orange-color);
+    color: var(--grey-color);
     font-size: .9rem;
     font-weight: 400;
     cursor: pointer;
@@ -109,7 +109,7 @@
 
 .genreMainContainerText {
     font-size: .7rem;
-    color: var(--orange-color);
+    color: var(--red-color);
 }
 
 @media screen and (max-width: 480px) {

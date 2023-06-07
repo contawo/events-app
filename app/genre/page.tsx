@@ -4,6 +4,7 @@ import { useState } from "react";
 import { AiOutlineCheckCircle } from "react-icons/ai";
 import styles from "@/styles/Genre.module.css";
 import { useRouter } from "next/navigation";
+import {useEffect} from "react";
 
 const GENRELIST : Array<string> = ["Amapiano", "Hip Hop", "House", "Jazz", "Gospel", "Afropop", "DeepHouse", "Soul Music", "Rock", "Reggae", "Gqom", "R&B Hip Hop"]
 
@@ -22,6 +23,10 @@ export default function Genre() {
             router.push("/events")
         }
     }
+
+    // useEffect(() => {
+    //     location.reload()
+    //   }, [])
     
     return (
         <main className={styles.genre}>

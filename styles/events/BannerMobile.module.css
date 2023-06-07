@@ -23,13 +23,14 @@
     outline: none;
     border: none;
     color: var(--text-color);
-    font-size: 1rem;
+    font-size: .8rem;
     width: 100%;
 }
 
 .bannerMobileSearchIcon {
     font-size: 1.5rem;
     cursor: pointer;
+    color: var(--grey-color);
 }
 
 .bannerMobileContent {
