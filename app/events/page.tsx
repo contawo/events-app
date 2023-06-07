@@ -28,7 +28,9 @@ export default function Events() {
                     <EventsList />
                 </section>
             </section>
-            <Mobile />
+            <section className={styles.eventsMainMobileContainer}>
+                <Mobile />
+            </section>
         </main>
     )
 }
