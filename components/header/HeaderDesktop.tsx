@@ -1,9 +1,9 @@
 'use client';
 
 import {HiOutlineMusicalNote} from "react-icons/hi2";
-import {TfiAnnouncement} from "react-icons/tfi";
 import styles from "@/styles/header/HeaderDesktop.module.css";
 import { useState } from "react";
+import { BsBell } from "react-icons/bs";
 
 export default function HeaderDesktop() {
     const [play, setPlay] = useState<boolean>(false);
@@ -20,7 +20,7 @@ export default function HeaderDesktop() {
                     className={play ? styles.headerDesktopDetailsIconPlay : styles.headerDesktopDetailsIcon} 
                     onClick={() => setPlay(!play)}
                 />
-                <TfiAnnouncement className={styles.headerDesktopDetailsIcon} />
+                <BsBell className={styles.headerDesktopDetailsIcon} />
                 <div className={styles.headerDesktopDetailsUser}></div>
             </section>
         </header>

@@ -20,7 +20,7 @@ export default function BannerMobile() {
             <div className={styles.bannerMobileSearch}>
                 <input 
                     type="search" 
-                    placeholder="Enter event city..." 
+                    placeholder="Search event city..." 
                     className={styles.bannerMobileSearchInput}
                 />
                 <AiOutlineFilter className={styles.bannerMobileSearchIcon} />

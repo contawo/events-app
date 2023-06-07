@@ -248,14 +248,14 @@
         grid-template-columns: repeat(1, 1fr);
     }
     .mainContainerFormAreaAutoContainer {
-        padding: 1.3rem .7rem;
+        padding: 1rem .7rem;
     }
     .mainContainerFormAreaAutoContainerGoogle,
     .mainContainerFormAreaAutoContainerFacebook {
         font-size: 1.5rem;
     }
     .mainContainerFormAreaInputsButton {
-        padding: 1.3rem .7rem;
+        padding: 1.1rem .7rem;
         margin-top: 4rem;
     }
     .mainContainerFormAreaAutoContainerText {
@@ -265,7 +265,7 @@
         padding-top: 1.5rem;
     }
     .mainContainerFormAreaInputsContentValue {
-        font-size: 1.2rem;
+        font-size: 1rem;
         padding: .8rem .4rem;
     }
     .mainContainerFormAreaHeader {

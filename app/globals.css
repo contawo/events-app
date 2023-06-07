@@ -12,7 +12,7 @@
     --border-radius: 10px;
     --grey-bg: rgb(214, 214, 214);
     --linear: linear-gradient(270deg, rgba(217, 141, 0, 0.35) 40.1%, rgba(255, 255, 255, 0) 71.35%);
-    --transparent-bg: rgba(255, 255, 255, 0.8);
+    --transparent-bg: rgba(255, 255, 255, 0.65);
     --filter: blur(50px);
     --gradient-bg: linear-gradient(180deg, #EBEBEB 0%, rgba(255, 255, 255, 0.05) 100%);
 
@@ -29,7 +29,7 @@
         --grey-bg: rgb(29, 29, 29);
         --orange-color: rgb(232, 151, 0);
         --linear: linear-gradient(270deg, rgba(217, 141, 0, 0.35) 40.1%, rgba(0, 0, 0, 0) 71.35%);
-        --transparent-bg: rgba(0, 0, 0, 0.8);
+        --transparent-bg: rgba(0, 0, 0, 0.65);
         --gradient-bg: linear-gradient(180deg, rgba(15, 15, 15, 1) 0%, rgba(15, 15, 15, 0.05) 100%);
     }
 }
