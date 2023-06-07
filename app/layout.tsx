@@ -16,7 +16,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="manifest" href="/public/manifest.json" />
+        <link rel="manifest" href="manifest.json" />
+        <meta name="theme-color" content="#317EFB"/>
       </head>
       <body className={inter.className}>{children}</body>
     </html>
