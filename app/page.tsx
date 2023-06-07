@@ -33,11 +33,8 @@ export default function Home() {
       if (userDetails.email.trim() === "") {
         setError({...error, emailError: "Please enter your email"})
         return
-      }
-
-      if (userDetails.password.trim() === "") {
-        setError({...error, passwordError: "Please enter your password"})
-        return
+      } else {
+        setError({...error, emailError: ""})
       }
       
       const validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+\.+[a-zA-Z0-9-]*$/;
@@ -45,9 +42,17 @@ export default function Home() {
         setError({passwordError: "", emailError: "Please enter a valid email"})
         return
       } else {
+        setError({...error, emailError: ""})   
+      }
+      
+      if (userDetails.password.trim() === "") {
+        setError({...error, passwordError: "Please enter your password"})
+        return
+      } else {
         setError({passwordError: "", emailError: ""})
         router.push("/genre")
       }
+      
       
     }
 

@@ -1,7 +1,10 @@
+'use client';
+
 import styles from "@/styles/events/EventsList.module.css";
 import { FaChevronDown } from "react-icons/fa";
 import EventDisplay from "../utils/EventDisplay";
 import { EventType } from "@/types/all";
+import { IoFilter } from "react-icons/io5";
 
 const eventList : EventType[] = [
     {
@@ -29,6 +32,7 @@ export default function EventsList() {
         <section className={styles.eventsList}>
             <section className={styles.eventsListTop}>
                 <h1 className={styles.eventsListTopTitle}>Events</h1>
+                <IoFilter className={styles.eventsListTopFilter} />
                 <section className={styles.eventsListTopToggle}>
                     <div className={styles.eventsListTopToggleItem}>
                         <p className={styles.eventsListTopToggleItemText}>Monday</p>

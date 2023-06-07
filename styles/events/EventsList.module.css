@@ -45,3 +45,25 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 4rem;
 }
+
+.eventsListTopFilter {
+    display: none;
+}
+
+@media screen and (max-width: 480px) {
+    .eventsListItems {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1.5rem;
+    }
+    .eventsList {
+        padding: 0 .8rem;
+        margin-top: 1.5rem;
+    }
+    .eventsListTopToggle {
+        display: none;
+    }
+    .eventsListTopFilter {
+        display: block;
+        font-size: 1.5rem;
+    }
+}

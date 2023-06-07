@@ -25,6 +25,7 @@ export default function Events() {
                 <section className={styles.eventsMainMobileContent}>
                     <HeaderMobile />
                     <BannerMobile />
+                    <EventsList />
                 </section>
                 <Mobile />
             </section>
