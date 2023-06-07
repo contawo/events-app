@@ -27,8 +27,8 @@ export default function Events() {
                     <BannerMobile />
                     <EventsList />
                 </section>
-                <Mobile />
             </section>
+            <Mobile />
         </main>
     )
 }
