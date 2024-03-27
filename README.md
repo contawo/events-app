@@ -1,34 +1,32 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# LYE: Your Events Application 🎉
+Welcome to **LYE**, your go-to platform for events! While it's still a work in progress, let's explore what's in store and what's coming soon. 🌟
+
+## Overview
+**LYE** is a web application built with Next.js, focusing on the user interface for now. Here's what it currently offers:
+1. **Event Listings**: You can view upcoming events, even though they're not fully functional yet.
+2. **Soothing UI**: I've designed a calming interface to set the mood. Imagine soft music playing in the background. 🎵
+
+## Features Coming Soon
+1. **Authentication**: Secure logins for event organizers and attendees.
+2. **Event Queries**: Search for specific events based on location, date, or category.
+3. **Admin Dashboard**: Event organizers can manage their events, track registrations, and more.
+4. **Background Music**: I'll add soothing tunes to enhance the user experience.
+
+## Tech Stack
+- **Next.js**: My frontend framework of choice.
+- **Firebase Authentication**: For secure logins.
+- **Firebase Firestore**: To store event data.
 
 ## Getting Started
+1. **Clone the Repository**: Get started by cloning this repository to your local machine.
+2. **Install Dependencies**:
+   - Make sure you have Node.js installed.
+   - Run `npm install` to install project dependencies.
+3. **Run the Application**:
+   - Run `npm run dev` to start the development server.
+   - Access the application at `http://localhost:3000`.
 
-First, run the development server:
+## License
+This project is licensed under the **MIT License**. Feel free to explore, modify, and share. 📜
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Remember, every line of code brings us closer to a fully functional events platform. Happy coding! 🎊👩‍💻
