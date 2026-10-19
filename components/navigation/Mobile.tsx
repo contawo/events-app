@@ -9,6 +9,7 @@ import { usePathname } from "next/navigation";
 
 export default function Mobile() {
     const path = usePathname();
+    // Some test comment here
 
     return (
         <nav className={styles.mobile}>
